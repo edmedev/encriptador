@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- metas basicas -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <!-- metas del sitio -->
+        <title>Encriptador de Texto</title>
+        <meta name="keywords" content="encriptador, encriptar, desencriptar">
+        <meta name="description" content="Encritador texto que desea mostrar para una persona en especifica sin que sea visto por todo el publico">
+        <meta name="author" content="Eduardo Mendez">
+        <!-- Estilos CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="./index.html">
+                <img src="./imagenes/Logo.png" alt="Logo de Alura" class="logo">
+            </a>
+        </header>
+
+        <main>
+            <section class="seccion-izquierda">
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+                <div>
+                    <h6 class="informacion">Solo letras minúsculas y sin acento.</h6>
+                </div>
+
+                <div class="botones">
+                    <button class="boton-encriptar">Encriptar</button>
+                    <button class="boton-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="seccion-derecha">
+                <div class="contenedor-mensaje">
+                    <textarea class="mensaje" cols="20" rows="10"></textarea>
+                    <button class="copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

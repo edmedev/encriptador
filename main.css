@@ -1,0 +1,201 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    background: #F3F5FC;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+header {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.logo {
+    width: 120px;
+}
+
+main {
+    min-width: 280px;
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+}
+
+.seccion-izquierda {
+    display: inline;
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+.text-area {
+    background: #F3F5FC;
+    width: 100%;
+    height: 360px;
+    border: none;
+    color: #0A3871;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 12px;
+}
+
+.botones {
+    margin-top: 18px;
+    display: flex;
+    width: 100%;
+}
+
+.boton-encriptar {
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    height: 67px;
+}
+
+.boton-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+}
+
+.seccion-derecha {
+    background: #fff;
+    display: inline;
+    border-radius: 24px;
+}
+
+.contenedor-mensaje {
+    width: 100%;
+    padding: 32px;
+}
+
+.mensaje {
+    background-image: url("./imagenes/muneco.png");
+    background-repeat: no-repeat;
+    border: none;
+    color: #0A3871;
+    width: 100%;
+    height: 430px;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
+    height: 67px;
+    margin-top: 32px;
+}
+
+
+/* Media Queries: Celulares */
+@media screen and (max-width: 480px) {
+    .seccion-izquierda {
+        width: 100%;
+    }
+    .seccion-derecha {
+        width: 100%;
+    }
+    .botones {
+        display: inline-block;
+    }
+    .boton-encriptar {
+        width: 100%;
+    }
+    .boton-desencriptar {
+        width: 100%;
+    }
+}
+
+/* Media Queries: Celulares en posición verticales */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .seccion-izquierda {
+        width: 100%;
+    }
+    .seccion-derecha {
+        width: 100%;
+    }
+    .boton-encriptar {
+        width: 50%;
+    }
+    .boton-desencriptar {
+        width: 50%;
+        margin-left: 30px;
+    }
+}
+
+/* Media Queries: Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .seccion-izquierda {
+        width: 100%;
+    }
+    .seccion-derecha {
+        width: 100%;
+    }
+    .boton-encriptar {
+        width: 50%;
+    }
+    .boton-desencriptar {
+        width: 50%;
+        margin-left: 30px;
+    }
+}
+
+/* Media Queries: PC y Laptop */
+@media screen and (min-width: 1024px) {
+    .seccion-izquierda {
+        width: 70%;
+        padding-left: 180px;
+        padding-right: 80px;
+    }
+    .seccion-derecha {
+        width: 30%;
+        margin-top: -40px;
+    }
+    .boton-encriptar {
+        width: 50%;
+    }
+    .boton-desencriptar {
+        width: 50%;
+        margin-left: 30px;
+    }
+}
+
