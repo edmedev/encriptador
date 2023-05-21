@@ -1,0 +1,161 @@
+/* Estos son los estilos generales del BODY*/
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 32px;
+}
+
+body {
+    background: #F3F5FC;
+    width: 100%;
+}
+
+
+/* Estos son los estilos del HEADER */
+header {
+    width: 100%;
+    background: #D8DFE8;
+}
+
+.encabezado {
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 5%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 120px;
+}
+
+
+/* Estos son los estilos del FOOTER */
+footer {
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 32px;
+    font-size: 16px;
+    line-height: 2;
+    background: #D8DFE8;
+    color: #0A3871;
+    width: 100%;
+}
+
+.contenido-pie {
+    min-width: 320px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 2.2em 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.contenido-izquierdo {
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contenido-derecho {
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.copyright {
+    min-width: 320px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0.8em 5%;
+    text-align: center;
+    border-top: 1px solid #0A3871;
+}
+
+.titulo-pie {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0A3871;
+    padding-bottom: 8px;
+}
+
+.parrafo-pie {
+    font-size: 16px;
+}
+
+.link-social {
+    font-size: 16px;
+    text-decoration: none;
+    color: #0A3871;
+}
+
+.link-social:hover {
+    color: #0b50f1;
+}
+
+.link-social:active {
+    color: #0b50f1;
+}
+
+.texto-copy {
+    font-size: 16px;
+}
+
+
+/* Media Queries: Celulares */
+@media screen and (max-width: 480px) {
+    .contenido-izquierdo {
+        width: 100%;
+    }
+    .contenido-derecho {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+/* Media Queries: Celulares en posición verticales */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .contenido-izquierdo {
+        width: 100%;
+    }
+    .contenido-derecho {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+/* Media Queries: Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contenido-izquierdo {
+        width: 50%;
+    }
+    .contenido-derecho {
+        width: 50%;
+    }
+}
+
+/* Media Queries: PC y Laptop */
+@media screen and (min-width: 1024px) {
+    .contenido-izquierdo {
+        width: 50%;
+    }
+    .contenido-derecho {
+        width: 50%;
+    }
+}
+

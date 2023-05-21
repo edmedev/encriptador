@@ -1,35 +1,14 @@
-html {
-    box-sizing: border-box;
-}
+/* MAIN */
+/* Estos son los estilos del MAIN */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-}
-
-body {
-    background: #F3F5FC;
+main {
     min-width: 320px;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 5%;
 }
 
-header {
-    width: 100%;
-    margin-top: 40px;
-}
-
-.logo {
-    width: 120px;
-}
-
-main {
+.seccion-principal {
     min-width: 280px;
     max-width: 1360px;
     margin: 0 auto;
@@ -40,7 +19,6 @@ main {
 
 .seccion-izquierda {
     display: inline;
-    margin-top: 60px;
     margin-bottom: 32px;
 }
 
@@ -102,7 +80,7 @@ main {
 }
 
 .mensaje {
-    background-image: url("./imagenes/muneco.png");
+    background-image: url("../imagenes/muneco.png");
     background-repeat: no-repeat;
     border: none;
     color: #0A3871;
@@ -131,9 +109,6 @@ main {
     .seccion-izquierda {
         width: 100%;
     }
-    .seccion-derecha {
-        width: 100%;
-    }
     .botones {
         display: inline-block;
     }
@@ -143,14 +118,14 @@ main {
     .boton-desencriptar {
         width: 100%;
     }
+    .seccion-derecha {
+        width: 100%;
+    }
 }
 
 /* Media Queries: Celulares en posición verticales */
 @media screen and (min-width: 481px) and (max-width: 767px) {
     .seccion-izquierda {
-        width: 100%;
-    }
-    .seccion-derecha {
         width: 100%;
     }
     .boton-encriptar {
@@ -159,6 +134,9 @@ main {
     .boton-desencriptar {
         width: 50%;
         margin-left: 30px;
+    }
+    .seccion-derecha {
+        width: 100%;
     }
 }
 
@@ -167,15 +145,15 @@ main {
     .seccion-izquierda {
         width: 100%;
     }
-    .seccion-derecha {
-        width: 100%;
-    }
     .boton-encriptar {
         width: 50%;
     }
     .boton-desencriptar {
         width: 50%;
         margin-left: 30px;
+    }
+    .seccion-derecha {
+        width: 100%;
     }
 }
 
@@ -186,16 +164,16 @@ main {
         padding-left: 180px;
         padding-right: 80px;
     }
-    .seccion-derecha {
-        width: 30%;
-        margin-top: -40px;
-    }
     .boton-encriptar {
         width: 50%;
     }
     .boton-desencriptar {
         width: 50%;
         margin-left: 30px;
+    }
+    .seccion-derecha {
+        width: 30%;
+        margin-top: -100px;
     }
 }
 

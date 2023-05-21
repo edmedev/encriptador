@@ -42,3 +42,9 @@ function botonDesencriptar() {
     textArea.value = "";
 }
 
+function copiarTexto() {
+    mensaje.select();
+    document.execCommand("copy");
+    console.log("Texto copiado");
+}
+

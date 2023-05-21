@@ -8,44 +8,74 @@
         <!-- metas del sitio -->
         <title>Encriptador de Texto</title>
         <meta name="keywords" content="encriptador, encriptar, desencriptar">
-        <meta name="description" content="Encritador texto que desea mostrar para una persona en especifica sin que sea visto por todo el publico">
+        <meta name="description" content="Encritador y desencriptador de texto para cuando deseas mostrar un mensaje a una persona en especifica sin que sea visto por todo el publico">
         <meta name="author" content="Eduardo Mendez">
-        <!-- Estilos CSS -->
+        <!-- Estilos font-family -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./main.css">
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/main.css">
     </head>
 
     <body>
         <header>
-            <a href="./index.html">
-                <img src="./imagenes/Logo.png" alt="Logo de Alura" class="logo">
-            </a>
+            <section class="encabezado">
+                <a href="./index.html">
+                    <img src="./imagenes/Logo.png" alt="Logo de Alura" class="logo">
+                </a>
+            </section>
         </header>
 
         <main>
-            <section class="seccion-izquierda">
-                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <section class="seccion-principal">
+                <section class="seccion-izquierda">
+                    <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
 
-                <div>
-                    <h6 class="informacion">Solo letras minúsculas y sin acento.</h6>
-                </div>
+                    <div>
+                        <h6 class="informacion">Solo letras minúsculas y sin acento.</h6>
+                    </div>
 
-                <div class="botones">
-                    <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
-                    <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
-                </div>
-            </section>
+                    <div class="botones">
+                        <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                        <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                    </div>
+                </section>
 
-            <section class="seccion-derecha">
-                <div class="contenedor-mensaje">
-                    <textarea class="mensaje" cols="20" rows="10"></textarea>
-                    <button class="copiar">Copiar</button>
-                </div>
+                <section class="seccion-derecha">
+                    <div class="contenedor-mensaje">
+                        <textarea class="mensaje" cols="20" rows="10"></textarea>
+                        <button class="copiar" onclick="copiarTexto()">Copiar</button>
+                    </div>
+                </section>
             </section>
         </main>
 
-        <script src="./script.js"></script>
+        <footer>
+            <section class="contenido-pie">
+                <div class="contenido-izquierdo">
+                    <h1 class="titulo-pie">Encriptador de Texto</h1>
+                    <p class="parrafo-pie">Encritador y desencriptador de texto para cuando deseas mostrar un mensaje a una persona en especifica sin que sea visto por todo el publico</p>
+                </div>
+
+                <div class="contenido-derecho">
+                    <h1 class="titulo-pie">Contacto:</h1>
+                    <p class="parrafo-pie">✉ edem0142@gmail.com</p>
+                    <div>
+                        <a class="link-social" href="http://wa.me/573024515567" target="_blank">✆ WhatsApp</a>
+                    </div>
+                    <div>
+                        <a class="link-social" href="http://linkedin.com/in/eduardomendezv/" target="_blank">❤ Linkedin</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="copyright">
+                <h6 class="texto-copy">© 2023 Copyright | Desarrollado por: <a class="link-social" href="https://edmedev.github.io/">Eduardo Mendez</a>.</h6>
+            </section>
+        </footer>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>
