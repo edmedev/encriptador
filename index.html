@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
+<!-- Etiqueta HTML -->
+<html lang="es"> <!-- Lenguaje del sitio: Español -->
     <head>
         <!-- metas basicas -->
         <meta charset="UTF-8">
@@ -21,8 +22,10 @@
     </head>
 
     <body>
+        <!-- Este es el encabezado -->
         <header>
             <section class="encabezado">
+                <!-- Este es el logo del sitio -->
                 <a href="./index.html">
                     <img src="./imagenes/Logo.png" alt="Logo de Alura" class="logo">
                 </a>
@@ -30,37 +33,57 @@
         </header>
 
         <main>
+            <!-- Está es la sección principal del MAIN que con contiene dos secciones internas -->
             <section class="seccion-principal">
+
+                <!-- Está es la sección ubicada a la izquierda -->
                 <section class="seccion-izquierda">
+                    <!-- Este es el area de texto ubicado a la izquierda -->
                     <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
 
-                    <div>
-                        <h6 class="informacion">Solo letras minúsculas y sin acento.</h6>
+                    <!-- Instrucciones sobre el mensaje a escribir en el area de texto -->
+                    <div class="informacion">
+                        <img class="img-informacion" src="./imagenes/bi_exclamation-circle-fill.svg">
+                        <h6 class="texto-informacion">Solo letras minúsculas y sin acento.</h6>
                     </div>
 
+                    <!-- Botones ubicados a la izquierda -->
                     <div class="botones">
+                        <!-- Boton para Encriptar -->
                         <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                        <!-- Boton para Desencriptar -->
                         <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
                     </div>
                 </section>
 
+                <!-- Está es la sección ubicada a la derecha -->
                 <section class="seccion-derecha">
+                    <!-- Este es el contenedor del mensaje ubicada a la derecha -->
                     <div class="contenedor-mensaje">
+                        <!-- Este es el area para mostrar el texto encriptado o desencriptado -->
                         <textarea class="mensaje" cols="20" rows="10"></textarea>
+                        <!-- Este es el boton para copiar el mensaje encriptado o desencriptado -->
                         <button class="copiar" onclick="copiarTexto()">Copiar</button>
                     </div>
                 </section>
             </section>
         </main>
 
+        <!-- Este es el pie de página -->
         <footer>
-            <section class="contenido-pie">
-                <div class="contenido-izquierdo">
+            <!-- Está es la sección del pie de página superior -->
+            <section class="seccion-pie">
+
+                <!-- Este es el contenido izquierdo del pie de página superior -->
+                <div class="contenido-pie">
+                    <!-- Este es el titulo y la descripción del pie de página superior -->
                     <h1 class="titulo-pie">Encriptador de Texto</h1>
                     <p class="parrafo-pie">Encritador y desencriptador de texto para cuando deseas mostrar un mensaje a una persona en especifica sin que sea visto por todo el publico</p>
                 </div>
 
-                <div class="contenido-derecho">
+                <!-- Este es el contenido derecho del pie de página superior -->
+                <div class="contenido-pie contenido-derecho-pie">
+                    <!-- Está es la sección de contacto ubicado en el pie de página superior -->
                     <h1 class="titulo-pie">Contacto:</h1>
                     <p class="parrafo-pie">✉ edem0142@gmail.com</p>
                     <div>
@@ -72,11 +95,14 @@
                 </div>
             </section>
 
+            <!-- Está es la sección del pie de página inferior -->
             <section class="copyright">
-                <h6 class="texto-copy">© 2023 Copyright | Desarrollado por: <a class="link-social" href="https://edmedev.github.io/" target="_blank">Eduardo Mendez</a>.</h6>
+                <!-- Texto copyright del pie de página -->
+                <h6 class="texto-copyright">© 2023 Copyright | Desarrollado por: <a class="link-social" href="https://edmedev.github.io/" target="_blank">Eduardo Mendez</a>.</h6>
             </section>
         </footer>
 
+        <!-- Importación de JavaScrip -->
         <script src="./js/script.js"></script>
     </body>
 </html>

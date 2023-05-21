@@ -1,6 +1,5 @@
 /* MAIN */
 /* Estos son los estilos del MAIN */
-
 main {
     min-width: 320px;
     max-width: 1440px;
@@ -8,6 +7,7 @@ main {
     padding: 0 5%;
 }
 
+/* Estos son los estilos de la sección principal del MAIN que con tiene dos secciones internas */
 .seccion-principal {
     min-width: 280px;
     max-width: 1360px;
@@ -17,11 +17,13 @@ main {
     margin-bottom: 72px;
 }
 
+/* Estos son los estilos de la sección interna de la izquierda que contiene el área de texto y los botones para encriptar y desencriptar */
 .seccion-izquierda {
     display: inline;
     margin-bottom: 32px;
 }
 
+/* Estos son los estilos del áre de texto ubicada en la izquierda */
 .text-area {
     background: #F3F5FC;
     width: 100%;
@@ -31,25 +33,41 @@ main {
     text-transform: lowercase;
 }
 
+/* Estilos del placeholder para el texto a escribir el area de texto */
 ::placeholder {
     color: #0A3871;
 }
 
+/* al pasar por el cursor en el area de texto */
 .text-area:focus {
     outline: none;
 }
 
+/* Estilos del contenedor de las instrucciones sobre el mensaje a escribir en el area de texto */
 .informacion {
+    padding-left: 20px;
+    display: flex;
+}
+
+/* Estilos de la imagen de instrucciones sobre el mensaje a escribir en el area de texto */
+.img-informacion {
+    padding-right: 7px;
+}
+
+/* Estilos del texto de instrucciones sobre el mensaje a escribir en el area de texto */
+.texto-informacion {
     color: #495057;
     font-size: 12px;
 }
 
+/* Estilos de los botones */
 .botones {
     margin-top: 18px;
     display: flex;
     width: 100%;
 }
 
+/* Estilos del boton para encriptar */
 .boton-encriptar {
     background: #0A3871;
     border: 1px solid #0A3871;
@@ -59,6 +77,7 @@ main {
     height: 67px;
 }
 
+/* Estilos del boton para desencriptar */
 .boton-desencriptar {
     background: #D8DFE8;
     border: 1px solid #0A3871;
@@ -68,27 +87,32 @@ main {
     height: 67px;
 }
 
+/* Estos son los estilos de la sección interna de la derecha*/
 .seccion-derecha {
     background: #fff;
     display: inline;
     border-radius: 24px;
 }
 
+/* Estos son los estilos del contenedor de la derecha que muestra el mensaje encriptado y desencriptado y el boton para copiar el mensaje */
 .contenedor-mensaje {
     width: 100%;
     padding: 32px;
 }
 
+/* Estos son los estilos del area que muestra el mensaje encriptado o desencriptado */
 .mensaje {
     border: none;
     color: #0A3871;
     width: 100%;
 }
 
+/* Al pasar por el cursor en el área que muestra el mensaje encriptado o desencriptado */
 .mensaje:focus {
     outline: none;
 }
 
+/* Estos son los estilos del boton para copiar el mensaje encriptado o desencriptado */
 .copiar {
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -101,6 +125,7 @@ main {
 }
 
 
+/* Estas son los estilos de Media Queries */
 /* Media Queries: Celulares */
 @media screen and (max-width: 480px) {
     .seccion-izquierda {

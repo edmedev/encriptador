@@ -1,9 +1,10 @@
-/* Estos son los estilos generales del BODY*/
+/* Estos son los estilos generales del BODY y HTML */
 
 html {
     box-sizing: border-box;
 }
 
+/* Estilos para resetear los etilos que traen por defecto HTML */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ html {
     font-size: 32px;
 }
 
+/* Estilos del BODY */
 body {
     background: #F3F5FC;
     width: 100%;
@@ -26,6 +28,7 @@ header {
     background: #D8DFE8;
 }
 
+/* Estilos de la sección del encabezado */
 .encabezado {
     min-width: 320px;
     max-width: 1440px;
@@ -36,6 +39,7 @@ header {
     margin-bottom: 30px;
 }
 
+/* Estilos del logo */
 .logo {
     width: 120px;
 }
@@ -54,7 +58,8 @@ footer {
     width: 100%;
 }
 
-.contenido-pie {
+/* Estilos del pie de página superior */
+.seccion-pie {
     min-width: 320px;
     max-width: 940px;
     margin: 0 auto;
@@ -64,27 +69,14 @@ footer {
     align-content: center;
 }
 
-.contenido-izquierdo {
+/* Estilos de las secciones a la derecha e izquierda del pie de página superior */
+.contenido-pie {
     display: inline-block;
     padding: 0 20px;
     text-align: center;
 }
 
-.contenido-derecho {
-    display: inline-block;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.copyright {
-    min-width: 320px;
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0.8em 5%;
-    text-align: center;
-    border-top: 1px solid #0A3871;
-}
-
+/* Estilos para el titulos del pie de página superior */
 .titulo-pie {
     font-size: 16px;
     line-height: 1.5;
@@ -94,67 +86,76 @@ footer {
     padding-bottom: 8px;
 }
 
+/* Estilos para el parrafo del pie de página superior */
 .parrafo-pie {
     font-size: 16px;
 }
 
+/* Estilos de los enlace del pie de página */
 .link-social {
     font-size: 16px;
     text-decoration: none;
     color: #0A3871;
 }
 
+/* al pasar por el cursor del enlace */
 .link-social:hover {
     color: #0b50f1;
 }
 
+/* al hacer clic en el enlace */
 .link-social:active {
     color: #0b50f1;
 }
 
-.texto-copy {
+/* Estilos de la sección del pie de página inferior */
+.copyright {
+    min-width: 320px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0.8em 5%;
+    text-align: center;
+    border-top: 1px solid #0A3871;
+}
+
+/* Estilos del texto copyright que aparece en el pie de página inferior */
+.texto-copyright {
     font-size: 16px;
 }
 
 
+/* Estas son los estilos de Media Queries */
+
 /* Media Queries: Celulares */
 @media screen and (max-width: 480px) {
-    .contenido-izquierdo {
+    .contenido-pie {
         width: 100%;
     }
-    .contenido-derecho {
-        width: 100%;
+    .contenido-derecho-pie {
         margin-top: 40px;
     }
 }
 
 /* Media Queries: Celulares en posición verticales */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-    .contenido-izquierdo {
+    .contenido-pie {
         width: 100%;
     }
-    .contenido-derecho {
-        width: 100%;
+    .contenido-derecho-pie {
         margin-top: 40px;
     }
 }
 
 /* Media Queries: Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .contenido-izquierdo {
-        width: 50%;
-    }
-    .contenido-derecho {
+    .contenido-pie {
         width: 50%;
     }
 }
 
 /* Media Queries: PC y Laptop */
 @media screen and (min-width: 1024px) {
-    .contenido-izquierdo {
-        width: 50%;
-    }
-    .contenido-derecho {
+    .contenido-pie {
         width: 50%;
     }
 }
