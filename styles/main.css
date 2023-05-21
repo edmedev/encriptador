@@ -80,12 +80,9 @@ main {
 }
 
 .mensaje {
-    background-image: url("../imagenes/muneco.png");
-    background-repeat: no-repeat;
     border: none;
     color: #0A3871;
     width: 100%;
-    height: 430px;
 }
 
 .mensaje:focus {
@@ -121,6 +118,9 @@ main {
     .seccion-derecha {
         width: 100%;
     }
+    .mensaje {
+        height: 430px;
+    }
 }
 
 /* Media Queries: Celulares en posición verticales */
@@ -138,6 +138,9 @@ main {
     .seccion-derecha {
         width: 100%;
     }
+    .mensaje {
+        height: 180px;
+    }
 }
 
 /* Media Queries: Tablets */
@@ -154,6 +157,9 @@ main {
     }
     .seccion-derecha {
         width: 100%;
+    }
+    .mensaje {
+        height: 180px;
     }
 }
 
@@ -174,6 +180,11 @@ main {
     .seccion-derecha {
         width: 30%;
         margin-top: -100px;
+    }
+    .mensaje {
+        background-image: url("../imagenes/muneco.png");
+        background-repeat: no-repeat;
+        height: 430px;
     }
 }
 

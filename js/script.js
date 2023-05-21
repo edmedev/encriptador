@@ -1,6 +1,8 @@
+// Agregando variables
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 
+// Función para encriptar el mensaje
 function encriptar(stringEncriptado) {
     let matrizMensaje = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringEncriptado = stringEncriptado.toLowerCase();
@@ -22,6 +24,7 @@ function botonEncriptar() {
     mensaje.style.backgroundImage = "none";
 }
 
+// Función para desencriptar el mensaje
 function desencriptar(stringDesencriptado) {
     let matrizMensaje = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringDesencriptado = stringDesencriptado.toLowerCase();
@@ -42,6 +45,7 @@ function botonDesencriptar() {
     textArea.value = "";
 }
 
+// Función para copiar el mensaje que ha sido encriptado o desencriptado
 function copiarTexto() {
     mensaje.select();
     document.execCommand("copy");
