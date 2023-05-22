@@ -2,7 +2,7 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 
-// Función para encriptar el mensaje
+// Función de la lógica para encriptar el mensaje
 function encriptar(stringEncriptado) {
     let matrizMensaje = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringEncriptado = stringEncriptado.toLowerCase();
@@ -17,14 +17,15 @@ function encriptar(stringEncriptado) {
     return stringEncriptado;
 }
 
+// Función del evento para hacer clic al boton encriptar y mostrar el mensaje encriptado
 function botonEncriptar() {
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
-    mensaje.style.backgroundImage = "none";
+    mensaje.style.backgroundImage = "none"; // función para eliminar la imagen de fondo al encriptar o desencriptar un mensaje
 }
 
-// Función para desencriptar el mensaje
+// Función de la lógica para desencriptar el mensaje
 function desencriptar(stringDesencriptado) {
     let matrizMensaje = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringDesencriptado = stringDesencriptado.toLowerCase();
@@ -39,10 +40,12 @@ function desencriptar(stringDesencriptado) {
     return stringDesencriptado;
 }
 
+// Función del evento para hacer clic al boton desencriptar y mostrar el mensaje desencriptado
 function botonDesencriptar() {
     const textoDesencriptado = desencriptar(textArea.value);
     mensaje.value = textoDesencriptado;
     textArea.value = "";
+    mensaje.style.backgroundImage = "none"; // función para eliminar la imagen de fondo al encriptar o desencriptar un mensaje
 }
 
 // Función para copiar el mensaje que ha sido encriptado o desencriptado
